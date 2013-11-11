@@ -10,8 +10,6 @@ class Spotify
         puts "Song: #{@song_name}"
         puts "Artist: #{@artist_name}"
     	puts "Album: #{@album} (#{@released})"
-
-        puts @artists
         puts "\n"
     end
 end
