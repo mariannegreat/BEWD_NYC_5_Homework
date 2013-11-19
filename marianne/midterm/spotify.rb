@@ -7,9 +7,8 @@ class Spotify
     end
 
     def print
-        puts "Song: #{@song_name}"
-        puts "Artist: #{@artist_name}"
-    	puts "Album: #{@album} (#{@released})"
-        puts "\n"
+        puts "Song: #{@song_name}\n" +
+        "Artist: #{@artist_name}\n" +
+        "Album: #{@album} (#{@released})\n\n"
     end
 end
