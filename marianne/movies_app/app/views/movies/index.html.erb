@@ -1,0 +1,10 @@
+<h1>Welcome to RetFlix!</h1>
+<p>Search for a movie by title, description, or year below.</p>
+
+<%= form_tag '/search', method: :get do %>
+	<%= label_tag 'q', "Search" %>
+	<%= text_field_tag 'q' %>
+	<%= submit_tag 'Go!' %>
+<% end %>
+
+<p><%= link_to "View all movies", all_path %> | <%= link_to "Add new movie", new_movie_path %></p>

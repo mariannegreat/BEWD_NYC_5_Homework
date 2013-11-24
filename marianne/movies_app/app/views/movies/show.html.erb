@@ -1,0 +1,3 @@
+<h1><%= @movie.title %> (<%= @movie.year_released %>)</h1>
+<p><%= @movie.description %></p>
+<p><%= link_to "Edit movie", edit_movie_path(@movie) %> | <%= link_to "View all movies", all_path %> | <%= link_to "Back to index", root_path %></p>
