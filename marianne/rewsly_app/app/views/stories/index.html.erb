@@ -8,4 +8,18 @@
 	<%= submit_tag 'Search stories' %>
 <% end %>
 
+<h2>Most popular stories</h2>
+
+<% @popular_stories.each do |story| %>
+	<p><%= link_to story.title, story_path(story) %></p>
+<% end %>
+
+<h2>Highest rated stories</h2>
+
+<% @highest_rated.each do |story| %>
+	<p><%= link_to story.title, story_path(story) %></p>
+<% end %>
+
+<h2>All stories</h2>
+
 <%= render 'story_list' %>

@@ -1,6 +1,8 @@
 class StoriesController < ApplicationController
   def index
-  	@stories = Story.all
+    @stories = Story.all
+    @popular_stories = Story.where(created_at: DateTime.now.beginning_of_day.. DateTime.now.end_of_day)
+    @highest_rated = Story.where('upvotes > 4')
   end
   def show
   	@story = Story.find params[:id]
